@@ -1,0 +1,25 @@
+.notes {
+    width: 500px;
+    height: 100px;
+    resize: none;
+}
+
+.note-save-button {
+    size: 100px;
+    position: relative;
+
+    height: 105px;
+}
+
+.note-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}

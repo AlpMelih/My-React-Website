@@ -8,12 +8,22 @@ function Europe() {
     return (
         <div>
             Europe page
-            <textarea
-                value={comments.EuropeC}
-                onChange={(e) => handleCommentChange('EuropeC', e.target.value)}
-                placeholder="EuropeC"
-            />
-            <button onClick={(e) => saveCommentsToLocalStorage()}></button>
+            <div className='Center-text'>
+                Gitmek istediğiniz yerleri buraya not alabilirsiniz
+            </div>
+            <div className='note-container'>
+
+
+
+                <textarea className='notes'
+                    value={comments.EuropeC}
+                    onChange={(e) => handleCommentChange('EuropeC', e.target.value)}
+                    placeholder="EuropeC"
+                />
+                <button className='note-save-button' onClick={(e) => saveCommentsToLocalStorage()}>
+                    Kaydet
+                </button>
+            </div>
         </div>
     );
 }
