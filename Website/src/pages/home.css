@@ -1,4 +1,5 @@
 .card-container {
+
     width: 20rem !important;
     border-radius: 1rem !important;
     box-shadow: 1px, 10px, #999;
@@ -11,6 +12,7 @@
 }
 
 .card-img {
+    display: flex;
     width: 100%;
     border-radius: 1rem;
 }

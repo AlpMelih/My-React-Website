@@ -15,6 +15,7 @@ function Navbar() {
                 <Link to="/">
                     <img id="Logo" src={logo} alt="Logo" />
                 </Link>
+
                 <Link to="/north-america" className='region'>Kuzey Amerika</Link>
                 <Link to="/south-america" className='region'>Güney Amerika</Link>
                 <Link to="/Europe" className='region'>Avrupa</Link>

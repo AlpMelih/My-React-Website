@@ -13,17 +13,22 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/north-america" element={<NorthAmerica />} />
-          <Route path="/south-america" element={<SouthAmerica />} />
-          <Route path="/europe" element={<Europe />} />
-          <Route path="/africa" element={<Africa />} />
-          <Route path="/asia" element={<Asia />} />
-          <Route path="/oceania" element={<Oceania />} />
-          <Route path="*" element={<div>404 Not Found</div>} />
-        </Routes>
+        <div className="navbar">
+          <Navbar />
+        </div>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/north-america" element={<NorthAmerica />} />
+            <Route path="/south-america" element={<SouthAmerica />} />
+            <Route path="/europe" element={<Europe />} />
+            <Route path="/africa" element={<Africa />} />
+            <Route path="/asia" element={<Asia />} />
+            <Route path="/oceania" element={<Oceania />} />
+            <Route path="*" element={<div>404 Not Found</div>} />
+          </Routes>
+
+        </div>
       </BrowserRouter>
     </div>
   );
