@@ -12,8 +12,8 @@ function SouthAmerica() {
                 <textarea className='notes'
                     value={comments.SouthAmericaC}
                     onChange={(e) => handleCommentChange('SouthAmericaC', e.target.value)}
-                    placeholder="GüneyAmerika
-                    "
+                    placeholder="Notlarınız"
+
                 />
                 <button className='note-save-button' onClick={(e) => saveCommentsToLocalStorage()}>
                     Kaydet

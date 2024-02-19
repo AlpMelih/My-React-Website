@@ -19,7 +19,7 @@ function Asia() {
                 <textarea className='notes'
                     value={comments.AsiaC}
                     onChange={(e) => handleCommentChange('AsiaC', e.target.value)}
-                    placeholder="EuropeC"
+                    placeholder="Notlarınız"
                 />
                 <button className='note-save-button' onClick={(e) => saveCommentsToLocalStorage()}>
                     Kaydet

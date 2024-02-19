@@ -14,7 +14,7 @@ function Africa() {
                 <textarea className='notes'
                     value={comments.AfricaC}
                     onChange={(e) => handleCommentChange('AfricaC', e.target.value)}
-                    placeholder="AfricaC"
+                    placeholder="Notlarınız"
                 />
                 <button className='note-save-button' onClick={(e) => saveCommentsToLocalStorage()}>
                     Kaydet
