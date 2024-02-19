@@ -9,6 +9,7 @@
     background-color: aliceblue;
     height: fit-content;
 
+
 }
 
 .card-img {
@@ -33,4 +34,15 @@
 
 .container {
     display: flex;
+    justify-content: center;
+}
+
+.card-container#north-america-container {
+    position: relative;
+    top: -105px;
+}
+
+.card-container#okyanusya-container {
+    position: relative;
+    top: -70px;
 }
