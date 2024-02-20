@@ -1,9 +1,11 @@
 import React from 'react'
 import Comments from '../components/comments';
 import Navbar from '../components/Navbar';
+import countriesApi from '../components/countriesApi';
 
 function Europe() {
     const { comments, handleCommentChange, saveCommentsToLocalStorage } = Comments();
+    const { europeCountries } = countriesApi();
 
     return (
         <div>
@@ -24,6 +26,23 @@ function Europe() {
                     Kaydet
                 </button>
             </div>
+            <div >
+                {europeCountries.map(country => {
+                    return (
+
+                        <div key={country.name.common}>
+                            <h2>
+                                {country.name.common}
+
+                            </h2>
+                            <img src={country.flags.png} />
+                        </div>
+                    );
+
+                })}
+            </div>
+
+
         </div>
     );
 }

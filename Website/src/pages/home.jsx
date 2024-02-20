@@ -72,9 +72,9 @@ function Home() {
 
                         <div className='card-container' id='okyanusya-container'>
 
-                            <Link to='./ocenia' > <img className='card-img' src={Okyanusya}></img>
+                            <Link to='./oceania' > <img className='card-img' src={Okyanusya}></img>
                             </Link>
-                            <Link to="/ocenia" className='card-title'>Okyanusya</Link>
+                            <Link to="/oceania" className='card-title'>Okyanusya</Link>
                             <p className='card-details'>
                                 Okyanusya, göz alıcı doğal güzellikleri, ikonik manzaraları, eşsiz vahşi yaşamı, berrak sulardaki adaları ve zengin kültürel çeşitliliğiyle turistler için keşfedilmeyi bekleyen bir cennet; Avustralya'nın Sydney'inin ikonik Opera Evi ve Harbour Köprüsü, Büyük Bariyer Resifi'nin muhteşemliği, Melbourne'un canlı kültürel sahnesi, Yeni Zelanda'nın Fiordland Ulusal Parkı ve Milford Sound gibi doğa harikaları, Fiji Adaları'nın bembeyaz kumsalları ve berrak suları, Tahiti'nin egzotik güzelliği ve Fransız Polinezyası'nın mistik cazibesiyle her türlü seyahat zevkine hitap eden bir kıtadır.
                             </p>
