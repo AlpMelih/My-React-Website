@@ -1,6 +1,7 @@
 import React from 'react'
 import Comments from '../components/comments'
 import countriesApi from '../components/countriesApi';
+import "../components/countries.css"
 function SouthAmerica() {
     const { southAmericaCountries } = countriesApi()
     const { comments, handleCommentChange, saveCommentsToLocalStorage } = Comments();
@@ -21,16 +22,22 @@ function SouthAmerica() {
                     Kaydet
                 </button>
             </div>
-            <div>
+            <div className='base-container'>
                 {southAmericaCountries.map(country => {
                     return (
 
-                        <div key={country.name.common}>
-                            <h2>
-                                {country.name.common}
+                        <div class='country' key={country.name.common}>
 
-                            </h2>
-                            <img src={country.flags.png} />
+
+                            <div className='country-container'>
+                                <h2 className='country-name'>
+                                    {country.name.common}
+
+                                </h2>
+
+                                <img src={country.flags.png} />
+                            </div>
+
                         </div>
                     );
 

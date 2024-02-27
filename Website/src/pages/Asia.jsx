@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Comments from '../components/comments';
 import '../components/comments.css'
 import countriesApi from '../components/countriesApi';
+import "../components/countries.css"
 
 function Asia() {
     const { assianCountries } = countriesApi()
@@ -32,16 +33,22 @@ function Asia() {
                 </div>
 
             </div>
-            <div >
+            <div className='base-container'>
                 {assianCountries.map(country => {
                     return (
 
-                        <div key={country.name.common}>
-                            <h2>
-                                {country.name.common}
+                        <div class='country' key={country.name.common}>
 
-                            </h2>
-                            <img src={country.flags.png} />
+
+                            <div className='country-container'>
+                                <h2 className='country-name'>
+                                    {country.name.common}
+
+                                </h2>
+
+                                <img src={country.flags.png} />
+                            </div>
+
                         </div>
                     );
 

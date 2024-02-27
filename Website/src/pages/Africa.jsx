@@ -2,6 +2,7 @@ import React from 'react'
 import Comments from '../components/comments';
 import '../components/comments.css'
 import countriesApi from '../components/countriesApi';
+import "../components/countries.css"
 
 function Africa() {
     const { africaCountries } = countriesApi()
@@ -27,16 +28,22 @@ function Africa() {
                 </div>
             </div>
             <div>
-                <div >
+                <div className='base-container'>
                     {africaCountries.map(country => {
                         return (
 
-                            <div key={country.name.common}>
-                                <h2>
-                                    {country.name.common}
+                            <div class='country' key={country.name.common}>
 
-                                </h2>
-                                <img src={country.flags.png} />
+
+                                <div className='country-container'>
+                                    <h2 className='country-name'>
+                                        {country.name.common}
+
+                                    </h2>
+
+                                    <img src={country.flags.png} />
+                                </div>
+
                             </div>
                         );
 

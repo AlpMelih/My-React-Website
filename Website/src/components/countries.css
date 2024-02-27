@@ -1,0 +1,15 @@
+.country-container {
+    background-color: aliceblue;
+}
+
+.country {
+
+    padding: 20px;
+}
+
+.counrty-name {}
+
+.base-container {
+    display: flex;
+    flex-wrap: wrap !important;
+}
